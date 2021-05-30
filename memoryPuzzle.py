@@ -5,15 +5,15 @@
 import random , pygame, sys
 from pygame.locals import *
 
-FPS = 30
+FPS = 30    # frames per second, the general speed of the program 
 WINWIDTH = 640
 WINHEIGHT = 480
-REVEALSPEED = 8
-BOXSIZE = 50
-GAPSIZE = 10
+REVEALSPEED = 8 #speed box's, sliding reveals and covers
+BOXSIZE = 50    # size of box width and height 
+GAPSIZE = 10    # size of gap between boxs.
 BOARDWIDTH = 10 # columns of icons
 BOARDHEIGHT = 7 # rows of icons
-assert (BOARDWIDTH * BOARDHEIGHT) % 2 == 0, 'Board needs to have an even number of boxs for pairs of match.'
+assert (BOARDWIDTH * BOARDHEIGHT) % 2 == 0, 'Board needs to have an even number of boxs for pairs of match.' # prints this if the program crashes because of the assertion
 #XMARGIN = int(BOARDWIDTH - (BORDERWIDTH * (BOXSIZE + GAPSIZE)) / 2)
 #YMARGIN = int(BORDERHEIGHT - (BORDERHEIGHT * (BOXSIZE + GAPSIZE)) / 2)
 
